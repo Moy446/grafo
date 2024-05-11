@@ -101,7 +101,7 @@ public class grafo {
             temp = temp.next;
         }
         valores += destino.getValue()+"\n";
-        valores += "costo:"+ destino.costo;
+        valores += "costo:"+ destino.getCosto();
         return valores;
     }
     
