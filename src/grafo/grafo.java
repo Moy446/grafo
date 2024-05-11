@@ -9,7 +9,6 @@ import java.util.Set;
 
 public class grafo {
     Nodo first, last;
-    int cantAristas=0;
 
     public grafo() {
         first = last = null;
@@ -37,7 +36,6 @@ public class grafo {
             position = position.next;
         }
         position.lista.newAdyancense(destino, Peso);
-        cantAristas++;
     }
     
     public void newNodo (Nodo nodo){
@@ -103,6 +101,7 @@ public class grafo {
             temp = temp.next;
         }
         valores += destino.getValue()+"\n";
+        valores += "costo:"+ destino.costo;
         return valores;
     }
     
